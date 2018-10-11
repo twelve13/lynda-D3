@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Popular Courses on Lynda.com</title>
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+	</head>
+	<style>
+		h2, h5 {margin: 40px 0 0 100px; font-family: "Georgia"; color: #4a4a4a;}
+		h5 {margin-top: 5px;}
+		svg {margin-left: 200px; position: relative; top: -40px;}
+		#legend {border-left: solid 1px silver; float: right; margin-right: 100px; font-size: 12px; padding-left: 20px;}
+		#legend div {display: flex; align-items: center;}
+		#legend div:nth-of-type(1) div {background-color: #1eb8de;}
+		#legend div:nth-of-type(2) div {background-color: #47c4b6;}
+		#legend div:nth-of-type(3) div {background-color: #ff8b94;}
+		#legend div:nth-of-type(4) div {background-color: #e6e6e6;}
+		#legend div:nth-of-type(5) div {background-color: #ade550;}
+		#legend .colorBlock {height: 20px; width: 40px; margin-right: 10px;}
+		p {margin: 8px 0;}
+	</style>
+	<body>
+		<h2>Popular Courses on Lynda.com</h2>
+		<h5>As of October 11, 2018</h5>
+		<svg width="720" height="720" font-family="Arial" font-size="10" text-anchor="middle"></svg>
+		<div id="legend">
+			<p>Legend</p>
+			<div>
+				<div class="colorBlock"></div><p>Office Tools</p>
+			</div>
+			<div>
+				<div class="colorBlock"></div><p>Coding</p>
+			</div>
+			<div>
+				<div class="colorBlock"></div><p>Management</p>
+			</div>
+			<div>
+				<div class="colorBlock"></div><p>Miscellaneous</p>
+			</div>
+			<div>
+				<div class="colorBlock"></div><p>Graphics</p>
+			</div>
+		</div>
+		<script src="lynda-stats.js"></script>
+	</body>
+</html>
